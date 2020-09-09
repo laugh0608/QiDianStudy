@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>This is my first web!</title>
+    <!-- 下面是css的语法，可以写在style中 -->
+    <style>
+        /* 这是css的语法和注释方法 */
+        table,
+        div {
+            /*花括号前面的是选择器，选择器可以写多个，用逗号隔开，花括号里的内容可以多次定义属性和其的值*/
+            background: 50px
+        }
+
+        body {
+            background-image: url(./img/1.jpg);
+            /* 背景图片的地址 */
+            background-repeat: no-repeat;
+            /* 背景图片是否重复显示 */
+            /* background-size: auto; 自适应*/
+            background-position: center center;
+            /* 背景图片位置，居中 */
+            background-attachment: fixed;
+            /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+            background-size: cover;
+            /* 让背景图基于容器大小伸缩 */
+            /* transform: scale(0.5); 这是对整个body进行缩放*/
+        }
+
+        .test {
+            text-align: center;
+            position: relative;
+            right: 30%;
+        }
+
+        .box-test {
+            position: relative;
+            border: solid 3px red;
+            height: 300px;
+            width: 100%;
+        }
+
+        .box-x {
+            background-color: aqua;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            position: absolute;
+            vertical-align: middle;
+/*            display: table-cell*/
+            top: 3px;
+            right: 3px
+        }
+
+    </style>
+    <!--    link是引用外部css样式表-->
+</head>
+
+<body>
+    <p>
+        <a href="htpps://github.com/laugh0608" target="_blank">This is my Github!</a>
+        <!-- 这是超链接标签的用法，href代表链接，target是点击链接之后新开一个窗口 -->
+    </p>
+    <h1>
+        Hello Wrold!
+        <!-- 这个标签是标题，1号最大依次减小 -->
+    </h1>
+    <img src="这里是图片地址">
+    <!-- 上面是图片标签 -->
+    <audio src="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_3414866&response=res&type=convert_url&" controls>
+        <!-- 这个是音乐播放标签 -->
+    </audio>
+    <video src="http://wysj.jianwi.cn/res/mus_1.mp4" controls>
+        <!-- 这里是视频播放标签 -->
+    </video>
+    <!-- 下面是表格标签 -->
+    <table border="1" style="color:rgb(255, 0,0); size:5px; background-color: rgb(0, 150,150); padding: 3px;">
+        <!--style属性就是css修饰的部分，例如颜色，元素的大小、定位等-->
+        <!-- 每个属性之间用分号；来隔开 -->
+        <tr>
+            <td>1,2</td>
+            <td>2,1</td>
+        </tr>
+        <tr>
+            <td>1,2</td>
+            <td>2,1</td>
+            <td colspan="3">3,4</td>
+            <!--跨列-->
+            <td rowspan="2">4,3</td>
+            <!--跨行-->
+        </tr>
+        <tr>
+            <td>5,6</td>
+            <td>6,5</td>
+        </tr>
+    </table>
+    <div style="border: rosybrown; border-style: dotted; size: 3px;">
+        <!--div是分块标签并无实际意义-->
+        <!-- 下面是列表标签 -->
+        <!-- 这是有序列表 -->
+        <ol>
+            <li>第一</li>
+            <li>第二</li>
+            <li>第三</li>
+        </ol>
+        <!-- 这是无序列表 -->
+        <ul>
+            <li>第一</li>
+            <li>第二</li>
+            <li>第三</li>
+        </ul>
+    </div>
+    <div style="text-align: center; display: table-cell;vertical-align: middle;height: 50%">
+        <div style="border: 1px solid red; text-align: center; width: 100% ; margin: auto">
+            <!--水平居中设置width宽度值，并设置margin auto，垂直居中则要设置父级高度，display和-->
+            <!--内联块元素则要设置dispaly：inline-block-->
+            <!--块元素指每次要独占一行,比如标题h1等内联元素指可以同时在一行,如文本-->
+            <!--position:relative 是绝对位置,指在这个元素在原来的位置上向哪个方向进行偏移,有top left right等-->
+            yibankaifapingtai
+            <img src="http://parking.taoming.com/images/trial/201709/applogo-497059b91385cfd87.png">
+        </div>
+    </div>
+    <div>
+        <form class="test">
+            <tr>
+                <td>
+                    用户名
+                </td>
+                <td>
+                    <input type="text" name="user-name">
+                </td>
+                <td>
+                    密码
+                </td>
+                <td>
+                    <input type="password" name="user-password">
+                </td>
+                <td>
+                    <button>登录</button>
+                </td>
+            </tr>
+        </form>
+        <form action="www.baidu.com/s">
+            <input id="kw" name="wd" class="s_ipt" value="" maxlength="255" autocomplete="off">
+            <button>搜索</button>
+        </form>
+    </div>
+    <div class="box-test">
+        <p>
+            这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试
+        </p>
+        <div class="box-x">
+            X
+        </div>
+    </div>
+    <div>
+        <form>
+            <select>
+                <option>xuanxiang</option>
+                <option>xuanxiang</option>
+                <option>xuanxiang</option>
+                <option>xuanxiang</option>
+                <option>xuanxiang</option>
+                <option>xuanxiang</option>
+            </select>
+        </form>
+    </div>
+    <button onclick="alert('点我干嘛')">点我</button>
+    <script>
+        let name = prompt("hello.input: word")
+        alert("欢迎你"+ name);
+    </script>
+</body>
+
+</html>
